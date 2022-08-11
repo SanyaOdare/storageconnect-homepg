@@ -20,3 +20,8 @@ body {
   color: var(--sc-orange-300);
   font-family: 'Poppins', sans-serif;
 }
+
+/* Navbar */
+.sc-navbg {
+  background-color: var(--sc-blue-400);
+}
