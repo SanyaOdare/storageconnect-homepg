@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --sc-yellow-400: #FFBE0B;
+  --sc-yellow-300: #FFCE31; 
+  --sc-yellow-400: #FFBE0B; 
   --sc-orange-300: #FF7B00;
   --sc-orange-400: #FB5607;
+  --sc-white-100: #fff;
   --sc-blue-100: #E8EFFF;
   --sc-blue-400: #1849C6;
   --sc-gray-400: #4A4A4A;
@@ -17,11 +19,106 @@
 }
 
 body {
-  color: var(--sc-orange-300);
   font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar */
 .sc-navbg {
   background-color: var(--sc-blue-400);
+  padding: 1rem 1rem;
+}
+
+.fa-box-archive:before {
+  content: "\f187";
+  color: var(--sc-yellow-300);
+  font-size: 1.5rem;
+  margin:0 8px 0 16px;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232, 239, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(232, 239, 255);
+}
+
+a.nav-link.active {
+  color: var(--sc-yellow-300) !important;
+}
+
+a.nav-link:hover {
+  color: var(--sc-yellow-300) !important;
+}
+
+.btn-contact {
+  background-color: var(--sc-yellow-300);
+  font-weight: 500;
+  padding: 0.18rem 1rem;
+}
+
+.card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Showcase */
+#card-main {
+  /* background: black; */
+  border-radius: 0;
+  height: 609px;
+  overflow: hidden;
+  width: 100vw;
+  background: #1849C6;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(24, 73, 198, 0.8), rgba(195, 55, 99, 0)), url("img/image-1.png") 0 0 no-repeat;
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(24, 73, 198, 0.8)), url("img/image-1.png") no-repeat; /* The least supported option. */
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+h1, h2 {
+  font-size: 3.75rem;
+  font-weight: 800;
+}
+
+p {
+  margin-top: 1.5rem;
+  width: 600px;
+}
+
+#btn-cta-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-cta-left,
+.btn-cta-right {
+  border: 0;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.5rem;
+}
+
+.btn-cta-right {
+  background-color: var(--sc-white-100);
+  /* margin-left: 1rem; */
+}
+
+.btn-cta-left:hover {
+  background-color: transparent;
+  border: 1px solid var(--sc-yellow-300);
+}
+
+.btn-cta-right:hover {
+  background-color: transparent;
+  border: 1px solid var(--sc-white-100);
 }

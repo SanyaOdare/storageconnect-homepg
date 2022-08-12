@@ -17,38 +17,48 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg text-white sc-navbg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">StorageConnect</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active Listings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sell your Self Storage</a>
-          </li>          
-          <li class="nav-item">
-            <a class="nav-link disabled">Free Evaluation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Free Learn</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-          <button class="btn btn-warning" type="submit">Contact</button>
-        </form>
+  <section class="colored-section" id="title">
+    <nav class="navbar navbar-expand-lg text-white sc-navbg">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand link-light" href="#"><i class="fa-solid fa-box-archive"></i>StorageConnect</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll px-2" style="--bs-scroll-height: 200px;">
+            <li class="nav-item">
+              <a class="nav-link link-light" aria-current="page" href="#">Active Listings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#">Sell your Self Storage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#">Free Evaluation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#">Learn</a>
+            </li>
+          </ul>
+          <button class="btn btn-contact" type="submit">Contact</button>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <!-- Product Showcase -->
+    <div class="card text-bg-dark text-center" id="card-main">
+      <!-- <img src="./img/image-1.png" class="card-img" alt="storage"> -->
+      <div class=" container-fluid container card-img-overlay text-center">
+        <h1 class="card-title">Self Storage Business</h1>
+        <h2>Buy. Sell. Learn.</h2>
+        <p class="card-text fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sagittis, aliquam non tortor blandit lobortis. blandit</p>
+        <div id="btn-cta-container">
+          <button class="btn btn-cta-left btn-contact" type="submit">Sell Your Self Storage</button>
+          <button class="btn btn-cta-right btn-contact" type="submit">Active Self Storage Listings</button>
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- Header -->
-  <h1>StorageConnect</h1>
-  <!-- Product Showcase -->
+  </section>
   <!-- List Section 1 -->
   <!-- List Section 2 -->
   <!-- List Section 3 -->
